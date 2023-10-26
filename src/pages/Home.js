@@ -14,6 +14,15 @@ function Home() {
   const handleOrderNow = () => {
     navigate("/menu");
   };
+
+  const handleLogin = () => {
+    navigate("/login");
+  };
+
+  const handleSignIn = () => {
+    navigate("/signin");
+  };
+
   return (
     <div>
       <Navbar expand="lg" className="bg-body-tertiary navigbar ">
@@ -36,8 +45,11 @@ function Home() {
               <Nav.Link href="#contact">Contact us</Nav.Link>
             </Nav>
           </Navbar.Collapse>
-          <Button className="Buttonsign" type="submit">
+          <Button className="Buttonsign" onClick={handleSignIn} type="submit">
             SignIn
+          </Button>
+          <Button className="Buttonlogin" onClick={handleLogin} type="submit">
+            LoginIn
           </Button>
         </Container>
       </Navbar>
@@ -90,7 +102,7 @@ function Home() {
             Egginoa is a complete protein,
             <br /> providing all the essential amino acids your body needs,{" "}
             <br />
-            and also a good source of fiber
+            and also a good source of fiber.
           </p>
           <div>
             <Button className="Buttonorder" type="submit">

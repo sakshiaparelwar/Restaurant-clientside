@@ -5,6 +5,12 @@
 }
 .Buttonsign {
   width: 100px;
+  padding: 10px;
+  margin-right: 10px;
+}
+.Buttonlogin {
+  width: 100px;
+  padding: 10px;
 }
 .image {
   width: 100%;
@@ -18,7 +24,7 @@
   padding: 25px;
   background-color: rgba(245, 242, 239, 0.8);
   color: black;
-  border-radius: 10px;
+  border-radius: 10%;
   max-width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
@@ -65,4 +71,40 @@ p {
   .text {
     max-width: 600px; /* Limit the width on larger screens */
   }
+}
+
+/* ========================Signin and Login=================================== */
+.h2form {
+  margin-right: auto;
+  padding: 30px;
+  text-align: center;
+}
+input {
+  margin: 3px;
+  display: block;
+  background-color: antiquewhite;
+  border-radius: 5px;
+}
+label {
+  margin: 3px;
+  display: block;
+  padding: 5px;
+}
+.bodyoflogin {
+  background: linear-gradient(
+    rgb(146, 146, 197),
+    rgb(157, 157, 172),
+    rgb(173, 173, 202)
+  );
+  padding-bottom: 18%;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit {
+  margin: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
