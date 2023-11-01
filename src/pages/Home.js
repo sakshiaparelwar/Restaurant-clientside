@@ -85,7 +85,8 @@ function Home() {
         </div>
       </div>
       <div className="container1">
-        <Image src="./dish.jpeg" className="image2" alt="" fluid />
+        <Image src="./dish.jpeg" className="image2 img-fluid" alt="" />
+
         <div className="dish">
           <h2>
             Our Most <br />

@@ -39,8 +39,9 @@ p {
 .container1 {
   display: flex;
   justify-content: center;
-  border: 1px solid;
+  border: 1px solid rgb(239, 227, 227);
   margin: 10px;
+  background-color: rgb(239, 227, 227);
 }
 .image2 {
   width: 40%;
@@ -61,9 +62,10 @@ p {
   margin-bottom: 20px;
 }
 
-@media (min-width: 768px) {
-  .text {
-    max-width: 600px; /* Limit the width on larger screens */
+@media (max-width: 768px) {
+  .image2 {
+    max-width: 100%;
+    height: auto;
   }
 }
 
