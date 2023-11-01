@@ -62,14 +62,14 @@ function Home() {
               alt=""
               fluid
             />
-            <div className="carousel-caption text">
+            <div className="carousel-caption frontcaption ">
               <h1>
                 <b>Best Restaurant in Town.</b>
               </h1>
               <p>
                 <i>We welcome you to the most amazing Restaurant in Town.</i>
               </p>
-              <p>Fresh Food means Great Mood.</p>
+              <p>||Fresh Food means Great Mood||</p>
               <p>We provide best food, home delivery and dineout services.</p>
               <div>
                 <Button
@@ -85,12 +85,7 @@ function Home() {
         </div>
       </div>
       <div className="container1">
-        <Image
-          src="https://images.pexels.com/photos/1833336/pexels-photo-1833336.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          className="image2"
-          alt=""
-          fluid
-        />
+        <Image src="./dish.jpeg" className="image2" alt="" fluid />
         <div className="dish">
           <h2>
             Our Most <br />
