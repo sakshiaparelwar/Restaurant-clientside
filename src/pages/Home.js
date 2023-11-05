@@ -2,6 +2,7 @@ import React from "react";
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 import Button from "react-bootstrap/Button";
+import { Card } from "react-bootstrap";
 import Image from "react-bootstrap/Image";
 import Layout from "../components/Layout";
 import { useNavigate } from "react-router-dom";
@@ -52,9 +53,31 @@ function Home() {
           </div>
         </div>
         <div className="container1">
-          <Image src="./dish.jpeg" className="image2 img-fluid" alt="" />
+          <Card style={{ width: "38rem" }}>
+            <Card.Img src="./dish.jpeg" />
 
-          <div className="dish">
+            <Card.Body>
+              <Card.Title>Egginoa</Card.Title>
+              <Card.Text className=".p">
+                <p>
+                  This dish is full of flavor and nutrition!
+                  <br />
+                  Egginoa is a complete protein, providing all the essential
+                  amino acids your body needs, and also a good source of fiber.
+                </p>
+              </Card.Text>
+              <Button
+                className="Buttonorder"
+                type="submit"
+                onClick={handleOrderNow1}
+              >
+                <b>Order now</b>
+              </Button>
+            </Card.Body>
+          </Card>
+          {/* <Image src="./dish.jpeg" className="image2 img-fluid" alt="" /> */}
+
+          {/* <div className="dish">
             <h2>
               Our Most <br />
               Popular Dish.
@@ -76,7 +99,7 @@ function Home() {
                 <b>Order now</b>
               </Button>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <MenuContainer>

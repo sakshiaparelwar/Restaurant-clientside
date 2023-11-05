@@ -42,7 +42,7 @@ function Header() {
               SignIn
             </Button>
             <Button className="Buttonlogin" onClick={handleLogin} type="submit">
-              LoginIn
+              Login
             </Button>
           </div>
         </Container>

@@ -45,14 +45,11 @@ p {
   justify-content: center;
   border: 1px solid rgb(239, 227, 227);
   margin: 10px;
-  background-color: rgb(255, 255, 255);
-}
-.image2 {
-  width: 40%;
-  padding: 40px;
-}
-.dish {
-  padding: 40px;
+  background: linear-gradient(
+    rgb(239, 227, 227),
+    rgb(191, 191, 204),
+    rgb(238, 222, 222)
+  );
 }
 
 .text {
