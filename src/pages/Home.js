@@ -13,6 +13,10 @@ function Home() {
   const handleOrderNow = () => {
     navigate("/menu");
   };
+
+  const handleOrderNow1 = () => {
+    navigate("/order");
+  };
   return (
     <Layout>
       <div>
@@ -64,7 +68,11 @@ function Home() {
               and also a good source of fiber.
             </p>
             <div>
-              <Button className="Buttonorder" type="submit">
+              <Button
+                className="Buttonorder"
+                type="submit"
+                onClick={handleOrderNow1}
+              >
                 <b>Order now</b>
               </Button>
             </div>

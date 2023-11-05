@@ -3,12 +3,14 @@ import "./style.css";
 import Button from "react-bootstrap/esm/Button";
 import Layout from "../components/Layout";
 import axios from "axios";
+import { useNavigate } from "react-router-dom";
 
 function SignIn() {
   const [name, setName] = useState();
   const [phone, setPhone] = useState();
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
+  const navigate = useNavigate();
   let handlesubmit = (event) => {
     axios
       .post("https://customersdata.onrender.com/customers/create-customers", {
@@ -20,6 +22,7 @@ function SignIn() {
       .then((res) => {
         if (res.status === 200) {
           alert("You have Signup successfully");
+          navigate("/login");
         } else {
           Promise.reject();
         }
