@@ -35,7 +35,7 @@ function SignIn() {
   return (
     <Layout>
       <div className="bodyoflogin">
-        <h2 className="h2form">SignIn for better usability</h2>
+        <h2 className="h2form">Sign Up for better usability</h2>
         <form onSubmit={handlesubmit}>
           <label for="name">
             <b>Name</b>
