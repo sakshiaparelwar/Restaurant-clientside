@@ -39,7 +39,7 @@ function Header() {
           </Navbar.Collapse>
           <div className="buttoncontainer">
             <Button className="Buttonsign" onClick={handleSignIn} type="submit">
-              SignIn
+              Sign Up
             </Button>
             <Button className="Buttonlogin" onClick={handleLogin} type="submit">
               Login
