@@ -24,6 +24,7 @@ function SignIn() {
           alert("You have Signup successfully");
           navigate("/login");
         } else {
+          console.log("something is wrong");
           Promise.reject();
         }
       })
