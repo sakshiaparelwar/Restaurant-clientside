@@ -19,12 +19,8 @@ function Login() {
         password,
       })
       .then((res) => {
-        if (res) {
-          alert(res.data);
-          navigate("/home");
-        } else {
-          alert("Please enter correct password");
-        }
+        alert(res.data);
+        navigate("/home");
       })
       .catch((err) => {
         alert(err);
