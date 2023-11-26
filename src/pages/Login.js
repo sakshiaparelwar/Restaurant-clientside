@@ -19,8 +19,12 @@ function Login() {
         password,
       })
       .then((res) => {
-        alert(res.data);
-        navigate("/home");
+        if (res) {
+          alert(res.data);
+          navigate("/home");
+        } else {
+          alert("Please enter correct password");
+        }
       })
       .catch((err) => {
         alert(err);
